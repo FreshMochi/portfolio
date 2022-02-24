@@ -1,20 +1,20 @@
+import { animate, motion } from 'framer-motion'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import style from './MobileNav.module.css'
 
 export default function MobileNav() {
-  const [showMobile, setShowMobile] = useState(false)
+  const [showMobile, setShowMobile] = useState(false)  /* Set a state to toggle Menu Display */
     
     const menuDisplay = () => {     /* Function that will toggle menu */
       setShowMobile(!showMobile)  /* Will change showMobile Change */
-      console.log(showMobile)
+      
     }
     useEffect(() => {
-      
     
       return () => {
-        console.log(showMobile, "useEffect")
+        setTimeout(() => { }, 0)
       }
     }, )
     
@@ -28,6 +28,29 @@ export default function MobileNav() {
         <span />
         <span />
       </div>
+
+      <motion.div 
+      onClick={()=> menuDisplay()}
+      className={style.Menu}
+        initial={{
+          x: '100%',
+          scale: 1,
+          rotate: 0,
+        }}                                        
+        animate={(showMobile?hideMenu  :null )} > {/*Animation alters when "showMobile" state Changes*/}                       
+        <li><Link to='/' >Home</Link></li>         
+        <li><Link to='/' >About</Link></li>
+        <li><Link to='/' >Portfolio</Link></li>
+        <li><Link to='/' >Contact</Link></li>
+      </motion.div>
+
     </div>
   )
+}
+
+
+const hideMenu = {
+  x: 0,
+  y: 0,
+  rotate: 0,
 }
