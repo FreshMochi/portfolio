@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <div>
     <div 
-    className={style.Banner}
-    style={{backgroundImage: `url(${Banner})`}}
-    />
-     
-    Home
+      className={style.Banner}
+      style={{backgroundImage: `url(${Banner})`}}
+    >
+    
+    </div>
     <div className={style.HomeContent}>
       Home Content
     </div>
