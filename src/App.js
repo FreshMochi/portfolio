@@ -13,6 +13,9 @@ function App() {
         <Routes>{/* Will display Routed Page */}
           <Route path='/' element={<Home />} />
         </Routes>
+        <footer>
+          Footer 
+        </footer>
     </div>
   );
 }
