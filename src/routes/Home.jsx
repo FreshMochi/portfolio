@@ -27,7 +27,7 @@ export default function Home() {
     <motion.span initial={bannerFontAnimation} animate={animate} transition={{duration: 1.0, delay: 0.5}}>Portfolio</motion.span>
     </div>
     <div className={style.HomeContent}>
-      <Card />
+      <Card headline="About"/>
       <Card />
       <Card />
     </div>
