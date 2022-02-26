@@ -3,7 +3,7 @@ import style from './Card.module.css'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import gura from '../../img/contents/gura.jpg'
+import gura from '../../img/contents/biker.jpg'
 
 /* Initial setup before animation */
 const beforeAnimate = {
@@ -37,13 +37,20 @@ const animation = useAnimation()
     <motion.div 
     className={style.cardcntnr}
     initial={beforeAnimate}
-    animate={animation} ref={ref} > {/* Ref will reference to inview */}
+    animate={animation} ref={ref} 
+    whileHover={{
+      scale: 1.02,
+      transition: { duration: 0.4 },
+    }}> {/* ref will reference to inview */}
       <div><h1>{props.headline}</h1></div>
       <div className={style.imgcntnr}>
         <img src={gura} alt='' />
       </div>
       <div className={style.cardcntnt}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div className={style.btnpos}>
+        <button>View More</button>
       </div>
     </motion.div>
   )

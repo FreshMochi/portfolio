@@ -1,5 +1,6 @@
 .Hcntr {
   background: rgb(30, 30, 80);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,30,80,1) 20%);
 }
 
 .Banner {

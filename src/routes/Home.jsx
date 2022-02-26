@@ -28,8 +28,8 @@ export default function Home() {
     </div>
     <div className={style.HomeContent}>
       <Card headline="About"/>
-      <Card />
-      <Card />
+      <Card headline="Portfolio" />
+      <Card headline="Blog" />
     </div>
     </div>
   )
