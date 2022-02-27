@@ -1,6 +1,7 @@
 import style from './App.module.css';
 import { Route, Routes } from "react-router-dom";
 import Home from './routes/Home'
+import About from './routes/About'
 import Navigation from './components/NavigationBar/Navigation';
 import Footer from './components/Footer/Footer';
 
@@ -13,6 +14,7 @@ function App() {
         </nav>
         <Routes>{/* Will display Routed Page */}
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
         </Routes>
         <footer>
           <Footer />
