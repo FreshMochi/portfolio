@@ -2,6 +2,7 @@ import style from './App.module.css';
 import { Route, Routes } from "react-router-dom";
 import Home from './routes/Home'
 import Navigation from './components/NavigationBar/Navigation';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
           <Route path='/' element={<Home />} />
         </Routes>
         <footer>
-          Footer 
+          <Footer />
         </footer>
     </div>
   );
