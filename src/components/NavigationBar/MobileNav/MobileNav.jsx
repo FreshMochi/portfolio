@@ -40,7 +40,7 @@ export default function MobileNav() {
         animate={(showMobile?hideMenu  :null )} > {/*Animation alters when "showMobile" state Changes*/}                       
         <li><Link to='/' >Home</Link></li>         
         <li><Link to='/about' >About</Link></li>
-        <li><Link to='/' >Portfolio</Link></li>
+        <li><Link to='/portfolio' >Portfolio</Link></li>
         <li><Link to='/' >Contact</Link></li>
       </motion.div>
 
