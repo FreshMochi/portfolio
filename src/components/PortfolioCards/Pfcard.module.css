@@ -1,0 +1,46 @@
+.PfcardCntnr {
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(18, 129, 149);
+  border-radius: 20px;
+  transform: perspective(100px) translateZ(0px);
+  transition: all  0.3s;
+  position: relative;
+}
+
+.PfcardCntnr:hover {
+  box-shadow: 0px 12px 8px  rgb(0, 0, 0);
+  transform: perspective(100px) translateZ(2px) translateY(-7px);
+}
+.PfcardCntnr h1 {
+  text-transform: capitalize;
+  color: White;
+  padding: 0 0 30px 0;
+}
+
+.Pcontent {
+  height: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 11px;
+  border-radius: 20px;
+  transition: 0.35s;
+  border: 0px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background-color: rgb(102, 189, 211);
+  color: white;
+  box-shadow: 0px 4px 6px  rgb(250, 225, 211);
+}
