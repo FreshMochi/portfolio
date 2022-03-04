@@ -26,7 +26,7 @@ export default function Portfolio() {
       </div>
       <div className={style.PortfolioContent}>
         <Pfcard title='CSS Projects' link="css-projects" />
-        <Pfcard title='API driven projects' />
+        <Pfcard title='Restful API Projects' />
       </div>
     </div>
   )
