@@ -13,8 +13,8 @@ export default function About() {
       <div>
         <p>About me</p>
         <p>
-          I am a self taught Programmer. I currently work about 50 hours a week as an assistant manager. I've bought a book on
-          HTML && CSS and two books on Javascript. I've done online courses on web development. I am an aspiring Frontend developer.
+          I am a self taught, aspiring Frontend developer. Every night I would code 
+          or do a little research on projects I can add onto my webpage.
         
         </p>
       </div>
@@ -23,17 +23,20 @@ export default function About() {
           </div>
         </div>
       <div>
-        Goal: I want to be a full stack developer and in the future, I want to learn unity.
+        Goal: I want to become a full stack developer and be learn python.
       </div>
       <div>
         <div>
           HTML
           CSS,
           ES6,
-          React
+          React,
+          Github,
+          Wordpress,
+          Sqaurespace
         </div>
         <div>
-          Experienced in Node, Express, MongoDB, Firebase
+          Experienced in Node, Express, MongoDB
         </div>
       </div>
     </div>

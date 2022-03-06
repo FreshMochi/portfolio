@@ -14,8 +14,8 @@
 }
 
 .PfcardCntnr:hover {
-  box-shadow: 0px 12px 8px  rgb(0, 0, 0);
-  transform: perspective(100px) translateZ(2px) translateY(-7px);
+  box-shadow: 0px 12px 4px  rgb(0, 0, 0);
+  transform: perspective(100px) translateZ(1.5px) translateY(-9px);
 }
 .PfcardCntnr h1 {
   text-transform: capitalize;
@@ -39,8 +39,8 @@ button {
 }
 
 button:hover {
-  transform: translateY(-5px);
-  background-color: rgb(102, 189, 211);
-  color: white;
-  box-shadow: 0px 4px 6px  rgb(250, 225, 211);
+  transform: translateY(-7px);
+  background-color: rgb(255, 248, 153);
+  color: rgb(145, 143, 133);
+  box-shadow: 0px 6px 6px  rgb(255, 255, 255);
 }
