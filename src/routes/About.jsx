@@ -1,4 +1,5 @@
 import React from 'react'
+import Pfcard from '../components/PortfolioCards/Pfcard'
 import Banner from '../img/sunset.jpg'
 import style from '../PageStyles/About.module.css'
 
@@ -37,6 +38,10 @@ export default function About() {
         </div>
         <div>
           Experienced in Node, Express, MongoDB
+        </div>
+
+        <div>
+          <Pfcard title="Portfolio" />
         </div>
       </div>
     </div>
