@@ -13,7 +13,7 @@ export default function Pfcard(props) {
     className={style.PfcardCntnr}>
       <div><h1>{props.title}</h1></div>
       <div>
-          <Link to="/css-animation" style={{ textDecoration: 'none'}}>
+          <Link to={`/${props.link}`} style={{ textDecoration: 'none'}}>
           <button>
             View more
           </button>

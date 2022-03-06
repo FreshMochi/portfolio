@@ -7,10 +7,13 @@ import CSSProj from './routes/CSSProj';
 import Navigation from './components/NavigationBar/Navigation';
 import Footer from './components/Footer/Footer';
 
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
 function App() {
 
   return (
     <div className={style.App}>
+      <ScrollToTop>
         <nav className='App-header'>
           <Navigation />
         </nav>
@@ -28,6 +31,8 @@ function App() {
             }
           />
         </Routes>
+      </ScrollToTop>
+        
         <footer>
           <Footer />
         </footer>

@@ -41,7 +41,7 @@ export default function About() {
         </div>
 
         <div>
-          <Pfcard title="Portfolio" />
+          <Pfcard title="Portfolio" link="portfolio" />
         </div>
       </div>
     </div>
