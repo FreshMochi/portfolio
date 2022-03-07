@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from './routes/Home'
 import About from './routes/About'
 import Portfolio from './routes/Portfolio';
-import CSSProj from './routes/CSSProj';
+import Animatepro from './routes/Animatepro';
 import Navigation from './components/NavigationBar/Navigation';
 import Footer from './components/Footer/Footer';
 
@@ -21,7 +21,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />}/>
-          <Route path='/css-animation' element={<CSSProj />} />
+          <Route path='/css-animate' element={<Animatepro />}/>
           <Route
             path="*"
             element={

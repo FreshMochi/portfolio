@@ -1,6 +1,13 @@
 .CSScntnr {
   margin: 0;
   padding: 0;
+  width: auto;
+  background-color: black;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .btnAnimate {
@@ -122,7 +129,7 @@
 .btn02 {
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px 40px;
   font-size: 20px;
   position: relative;
@@ -138,7 +145,7 @@
   top: 50%;
   width: 10%;
   height: 20px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(55, 170, 185);
   border-radius: 50%;
   transform: translateY(-50%);
   transition: all 0.3s;
@@ -148,23 +155,23 @@
 
 .btn02:before {
   left: 0;
-  box-shadow: -100px 0 0 rgb(255, 0, 0);
+  box-shadow: -100px 0 0 rgb(55, 170, 185);
 }
 
 .btn02:after {
   right: 0;
-  box-shadow: 100px 0 0 rgb(255, 0, 0);
+  box-shadow: 100px 0 0 rgb(55, 170, 185);
 }
 
 .btn02:hover:before {
   left: 45%;
-  box-shadow: 30px 0 0 rgb(255, 0, 0);
+  box-shadow: 30px 0 0 rgb(55, 170, 185);
   opacity: 1;
 }
 
 .btn02:hover::after {
   right: 45%;
-  box-shadow: -30px 0 0 rgb(255, 0, 0);
+  box-shadow: -30px 0 0 rgb(55, 170, 185);
   opacity: 1;
 }
 
@@ -174,7 +181,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(55, 170, 185);
   border-radius: 8px;
   transform: scale(0);
   transition: 0.3s;
@@ -187,7 +194,7 @@
 }
 
 .btn02:hover {
-  color: cornflowerblue;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -250,3 +257,191 @@
 .btn03:hover {
   color: black;
 }
+
+
+
+
+/* End of Btn03 */
+
+
+
+/* Start of Btn04 */
+
+.btn04 {
+  width: 160px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+}
+
+.btn04:before {
+  content: '';
+  position: absolute;
+  top: -7%;
+  left: -3%;
+  width: 35%;
+  height: 3px;
+  background-color: black;
+  transition: 0.7s;
+}
+
+.btn04:after {
+  content: '';
+  position: absolute;
+  top: -5%;
+  left: -3%;
+  width: 2px;
+  height: 40%;
+  background-color: black;
+  transition: 0.7s;
+}
+
+.btn04:hover:before {
+  width: 95%;
+}
+.btn04:hover:after {
+  height: 95%;
+}
+
+.btn04 span{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn04 span:before {
+  content: '';
+  position: absolute;
+  top: 102%;
+  left: 67%;
+  width: 35%;
+  height: 3px;
+  background-color: rgb(255, 0, 0);
+  transition: 0.7s;
+}
+
+.btn04 span:after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 101%;
+  width: 3px;
+  height: 50%;
+  background-color: rgb(255, 0, 0);
+  transition: 0.7s;
+}
+
+.btn04 span:hover:before {
+  width: 96%;
+  left: 6%;
+}
+
+.btn04 span:hover:after {
+  height: 95%;
+  top: 8%;
+}
+
+
+
+
+/* End of Btn04 */
+
+
+/* Start of btn05 */
+
+
+.btn05 {
+  font-size: 26px;
+  height: 70px;
+  width: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.btn05 span {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.btn05:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.btn05:after {
+  content: '';
+  position: absolute;
+  top: 98%;
+  left: 100%;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.btn05:hover:before {
+  left: 0;
+}
+.btn05:hover:after {
+  left: 0;
+}
+
+.btn05 span:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 3px;
+  height: 100%;   
+  background-color: white;
+  transition: 0.3s;
+}
+
+.btn05 span:hover:before {
+  top: 0;
+}
+
+.btn05 span:after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 99%;
+  width: 3px;
+  height: 100%;   
+  background-color: white;
+  transition: 0.3s;
+}
+
+.btn05 span:hover:after {
+  top: 0;
+}
+
