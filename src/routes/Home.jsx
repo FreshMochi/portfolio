@@ -26,6 +26,9 @@ export default function Home() {
     <motion.span initial={bannerFontAnimation} animate={animate} transition={{duration: 1.25, delay: 0.25}}>to my</motion.span>
     <motion.span initial={bannerFontAnimation} animate={animate} transition={{duration: 1.0, delay: 0.5}}>Portfolio</motion.span>
     </div>
+    <div style={{display:  "flex", justifyContent: 'center', alignItems: "center", color: 'white'}}>
+      <h1>Built with ReactJs</h1>
+    </div>
     <div className={style.HomeContent}>
       <Card headline="About"/>
       <Card headline="Portfolio" />

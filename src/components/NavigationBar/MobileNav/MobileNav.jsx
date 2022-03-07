@@ -42,7 +42,6 @@ export default function MobileNav() {
         <li><Link to='/about' >About</Link></li>
         <li><Link to='/portfolio' >Portfolio</Link></li>
         <li><Link to='/' >Contact</Link></li>
-        <li><Link to='/' >Write a Review</Link></li>
       </motion.div>
 
     </div>
