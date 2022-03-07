@@ -3,7 +3,7 @@ import style from '../PageStyles/AnimationStyleSheet/btn.module.css'
 
 export default function Animatepro() {
   return (
-    <div className='CSScntnr'>
+    <div className={style.AnimateContainer}>
       <div style={{margin: '0'}}><h1>CSS Animation Projects</h1></div>
       <div className={style.btnAnimate}>
         <div>
@@ -22,10 +22,10 @@ export default function Animatepro() {
           <a className={style.btn04}><span>Hover me</span></a>
         </div>
         <div>
-          <a className={style.btn05}>Hover Me</a>
+          <a className={style.btn05}><span>Hover me</span></a>
         </div>
         <div>
-          <a className={style.btn06}>Hover Me</a>
+          <a id={style.btn06}>Hover Me<span id={style.btn06span}></span></a>
         </div>
         <div>
           <a className={style.btn07}>Hover Me</a>

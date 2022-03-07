@@ -22,7 +22,7 @@ export default function Portfolio() {
       <div 
         className={style.Banner}
         style={{backgroundImage: `url(${Banner})`}}>
-        <motion.span initial={bannerFontAnimation} animate={animate} transition={{duration: 1.0, delay: 0.5}}>View my works!</motion.span>
+        <motion.span initial={bannerFontAnimation} animate={animate} transition={{duration: 1.0, delay: 0.15}}>View my works!</motion.span>
       </div>
       <div className={style.PortfolioContent}>
         <Pfcard title='CSS Animation' link="css-animation" />
