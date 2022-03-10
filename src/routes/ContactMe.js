@@ -7,7 +7,6 @@ export default function ContactMe() {
 
   const addEmail = (event) => {
     event.preventDefault()
-    console.log(process.env)
     const elementsArray = [...event.target.elements]
 
     /* use this method of uncontrolled components, where form data is handled by the DOM itself.
@@ -34,7 +33,7 @@ export default function ContactMe() {
       CONTACT_NUM: CONTACT_NUM,
       EMAIL: EMAIL
     });
-
+    console.log(contactForm)
 
   }
 
