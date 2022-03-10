@@ -9,6 +9,8 @@ import Footer from './components/Footer/Footer';
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
+import ContactMe from './routes/ContactMe';
+
 function App() {
 
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />}/>
           <Route path='/css-animate' element={<Animatepro />}/>
+          <Route path='/contact' element={<ContactMe />}/>
           <Route
             path="*"
             element={
