@@ -17,7 +17,7 @@ export default function About() {
         <p>
           Built with ReactJs and Firebase.
           I am a self taught, aspiring Frontend developer. I work 45 hours a week and code almost daily after work. 
-          I would code and or do a little research on the fundamentals of Javascript or React.
+          I would either code and or do a little research on the fundamentals of Javascript or React.
 
         </p>
         <p>

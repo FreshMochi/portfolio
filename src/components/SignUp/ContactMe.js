@@ -38,7 +38,6 @@ export default function ContactMe() {
       EMAIL: EMAIL,
       COMMENT: COMMENT
     });
-    console.log(contactForm)
 
   }
 
@@ -67,7 +66,7 @@ export default function ContactMe() {
         <input type='text' id="email" placeholder=' email' />
         <input type='tel' id="Pnumber" placeholder=' Contact Number' />
         <textarea className={style.comment} id="comment" placeholder="Leave a comment"></textarea>
-        <button>Add to Firebase</button>
+        <button>Send Contact</button>
       </motion.form>
     </motion.div>
   )

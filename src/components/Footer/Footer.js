@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Footer.module.css'
-import gmailPng from '../../img/icons/gmail.png'
+import gmailPng from '../../img/icons/gmail-icon.png'
 import igPng from '../../img/icons/ig.png'
 import tweetPng from '../../img/icons/twitter.png'
 
