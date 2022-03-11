@@ -1,0 +1,38 @@
+.formContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.contactform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: aquamarine;
+  background-color: rgba(12, 4, 17, 0.767);
+  width: 90%;
+  height: 70vh;
+  padding: 40px 0;
+}
+
+
+.contactform input {
+  border-radius: 20px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.comment {
+  resize: none;
+  font-size: 20px;
+  height: 80px;
+  margin: 20px 0 40px 0;
+}

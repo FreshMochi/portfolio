@@ -9,3 +9,8 @@
   align-items: center;
   flex-flow: column;
 }
+
+.contentContainer {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(44,35,66,1) 18%);
+  color: white;
+}

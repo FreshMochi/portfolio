@@ -42,7 +42,8 @@ const animation = useAnimation()
       scale: 1.02,
       transition: { duration: 0.4 },
       backgroundColor: "rgb(60, 40, 94)"
-    }}> {/* ref will reference to inview */}
+    }}
+    > {/* ref will reference to inview */}
       <div><h1>{props.headline}</h1></div>
       <div className={style.imgcntnr}>
         <img src={gura} alt='' />

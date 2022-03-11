@@ -2,10 +2,11 @@ import React from 'react'
 import Pfcard from '../components/PortfolioCards/Pfcard'
 import Banner from '../img/sunset.jpg'
 import style from '../PageStyles/About.module.css'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <div>
+    <div className={style.contentContainer}>
       <div 
       className={style.Banner}
       style={{backgroundImage: `url(${Banner})`}}>
@@ -14,17 +15,18 @@ export default function About() {
       <div>
         <p>About me</p>
         <p>
-          I am a self taught, aspiring Frontend developer. Every night I would code 
-          or do a little research on projects I can add onto my webpage.
-        
+          Built with ReactJs and Firebase.
+          I am a self taught, aspiring Frontend developer. I work 45 hours a week and code almost daily after work. 
+          I would code and or do a little research on the fundamentals of Javascript or React.
+
+        </p>
+        <p>
+          Feel free to contact me if you are looking for whether a web manager or a web developer.
         </p>
       </div>
-        <div style={{display: 'flex', justifyContent: "center", alignItems: "center", width: '100%', margin: '30px 0'}}>
-          <div style={{height: "50vh", width: '80%', backgroundColor: "green"}}>
-          </div>
-        </div>
+        
       <div>
-        Goal: I want to become a full stack developer and be learn python.
+        Goal: Becoming a full-stack developer with some knowledge in blender
       </div>
       <div>
         <div>

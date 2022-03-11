@@ -8,8 +8,8 @@ import Navigation from './components/NavigationBar/Navigation';
 import Footer from './components/Footer/Footer';
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ContactMe from './components/SignUp/ContactMe';
 
-import ContactMe from './routes/ContactMe';
 
 function App() {
 
@@ -23,8 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />}/>
-          <Route path='/css-animate' element={<Animatepro />}/>
-          <Route path='/contact' element={<ContactMe />}/>
+          <Route path='/css-animation' element={<Animatepro />}/>
           <Route
             path="*"
             element={
@@ -35,9 +34,9 @@ function App() {
           />
         </Routes>
       </ScrollToTop>
-        
         <footer>
           <Footer />
+          <ContactMe />
         </footer>
     </div>
   );

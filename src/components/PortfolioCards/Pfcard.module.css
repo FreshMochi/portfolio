@@ -9,13 +9,13 @@
   background: rgb(18, 129, 149);
   border-radius: 20px;
   transform: perspective(100px) translateZ(0px);
-  transition: all  0.3s;
+  transition: all  0.23s;
   position: relative;
 }
 
 .PfcardCntnr:hover {
   box-shadow: 0px 12px 4px  rgb(0, 0, 0);
-  transform: perspective(100px) translateZ(1.5px) translateY(-9px);
+  transform: perspective(80px) translateZ(1.5px) translateY(-12px);
 }
 .PfcardCntnr h1 {
   text-transform: capitalize;
