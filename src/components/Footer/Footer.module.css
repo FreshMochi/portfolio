@@ -27,6 +27,16 @@
   background-position: center;
   width: 90px;
   height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* background size for github */
+.smIcon:nth-child(2){
+  border-radius: 60px;
+  background-size: auto 103%;
+  background-color: white;
 }
 
 .ftInfo {

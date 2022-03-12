@@ -17,15 +17,16 @@
   justify-content: center;
   flex-flow: column;
   color: aquamarine;
-  background-color: rgba(12, 4, 17, 0.767);
+  background-color: rgba(12, 4, 17, 0.85);
   width: 90%;
   height: 70vh;
   padding: 40px 0;
+  border-radius: 20px;
 }
 
 
 .contactform input {
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 20px 0;
   font-size: 20px;
 }
@@ -35,4 +36,5 @@
   font-size: 20px;
   height: 80px;
   margin: 20px 0 40px 0;
+  border-radius: 10px;
 }

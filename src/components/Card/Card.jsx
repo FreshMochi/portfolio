@@ -44,12 +44,16 @@ const animation = useAnimation()
       backgroundColor: "rgb(60, 40, 94)"
     }}
     > {/* ref will reference to inview */}
-      <div><h1>{props.headline}</h1></div>
+      <div><h1 style={{
+        margin: "20px 0"
+      }}>{props.headline}</h1></div>
       <div className={style.imgcntnr}>
         <img src={gura} alt='' />
       </div>
       <div className={style.cardcntnt}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>
+        {props.dialog}
+        </p>
       </div>
       <div className={style.btnpos}>
         <button>View More</button>
