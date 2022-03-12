@@ -3,6 +3,11 @@ import Pfcard from '../components/PortfolioCards/Pfcard'
 import Banner from '../img/sunset.jpg'
 import style from '../PageStyles/About.module.css'
 import { motion } from 'framer-motion'
+import webpng from '../img/aboutPNG/webpng.png'
+import reactpng from '../img/aboutPNG/react.png'
+import firebasepng from '../img/aboutPNG/firebase.png'
+import githubpng from '../img/aboutPNG/github00.png'
+import wordpng from '../img/aboutPNG/wordpress0.png'
 
 export default function About() {
   return (
@@ -12,39 +17,42 @@ export default function About() {
       style={{backgroundImage: `url(${Banner})`}}>
         
       </div>
-      <div>
+      <div className={style.textContainer}>
         <p>About me</p>
         <p>
-          Built with ReactJs and Firebase.
-          I am a self taught, aspiring Frontend developer. I work 45 hours a week and code almost daily after work. 
-          I would either code and or do a little research on the fundamentals of Javascript or React.
-
+          I am a self taught, aspiring Frontend developer. I work 50 hours a week and code almost daily. 
+          Whenever I would return home from work, I would code and or do a little research on Javascript fundamentals
+          or learn cool libraries I can use with React.
+          However, my main goal is to learn about the backend and Data structures to help further my knowledge with web development.
         </p>
         <p>
-          Feel free to contact me if you are looking for whether a web manager or a web developer.
+          This website is built with React for Frontend and Firebase as backend.
+        </p>
+        <p>
+          <a href='#contactme'>Feel free to contact me for either more questions!</a>
         </p>
       </div>
+      <div className={`${style.iconContainer}`}>
+        <div className={style.logoBox}>
+          <img src={webpng} className={style.logo} />
+        </div>
+        <div className={style.logoBox}>
+          <img src={reactpng}className={style.logo} />
+        </div>
+        <div className={style.logoBox}>
+          <img src={firebasepng}className={style.logo} />
+        </div>
+        <div className={style.logoBox}>
+          <img src={githubpng}className={style.logo} />
+        </div>
+        <div className={style.logoBox}>
+          <img src={wordpng}className={style.logo} />
+        </div>
         
-      <div>
-        Goal: Becoming a full-stack developer with some knowledge in blender
-      </div>
-      <div>
-        <div>
-          HTML
-          CSS,
-          ES6,
-          React,
-          Github,
-          Wordpress,
-          Sqaurespace
-        </div>
-        <div>
-          Experienced in Node, Express, MongoDB
-        </div>
-
-        <div>
-          <Pfcard title="Portfolio" link="portfolio" />
-        </div>
+        
+       
+        <Pfcard title="Portfolio" link="portfolio"/>
+          
       </div>
     </div>
   )

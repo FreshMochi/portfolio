@@ -15,6 +15,7 @@ const animate = {
   opacity: 1
 }
 
+
 export default function Home() {
   return (
     <div className={style.Hcntr}>
@@ -35,9 +36,9 @@ export default function Home() {
         <h1 style={{padding: "20px"}}>Built with ReactJs</h1>
       </div>
       <div className={style.HomeContent}>
-        <Card headline="About" dialog={aboutDialog} />
-        <Card headline="Portfolio" dialog={portfolioDialog} />
-        <Card headline="Blog" dialog={blogDialog} />
+        <Card headline="About" dialog={aboutDialog} link="about" />
+        <Card headline="Portfolio" dialog={portfolioDialog} link="portfolio" />
+        <Card headline="Blog" dialog={blogDialog} link="blog"/>
       </div>
     </div>
   )

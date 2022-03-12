@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import gura from '../../img/contents/biker.jpg'
+import { Link } from 'react-router-dom';
 
 /* Initial setup before animation */
 const beforeAnimate = {
@@ -56,8 +57,13 @@ const animation = useAnimation()
         </p>
       </div>
       <div className={style.btnpos}>
-        <button>View More</button>
+        <button>
+          <Link
+           style={{textDecoration: 'none'}}
+           to={`/${props.link}`}>View More</Link>
+        </button>
       </div>
     </motion.div>
   )
 }
+
