@@ -57,13 +57,16 @@ const animation = useAnimation()
         </p>
       </div>
       <div className={style.btnpos}>
-        <button>
-          <Link
-           style={{textDecoration: 'none'}}
-           to={`/${props.link}`}>View More</Link>
-        </button>
+        <Link
+          style={{textDecoration: 'none'}}
+          to={`/${props.link}`}>
+          <button>
+          View More
+          </button>
+          </Link>
       </div>
     </motion.div>
   )
 }
+
 

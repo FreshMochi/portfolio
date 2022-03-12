@@ -32,7 +32,7 @@ export default function Portfolio() {
       </div>
       <div className={style.PortfolioContent}>
         <Pfcard title='CSS Animation' link="css-animation" />
-        <Pfcard title='Restful API Projects'  />
+        <Pfcard title='Blog' link="blog" />
       </div>
     </div>
   )

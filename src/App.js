@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ContactMe from './components/SignUp/ContactMe';
+import Blog from './routes/Blog';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />}/>
           <Route path='/css-animation' element={<Animatepro />}/>
+          <Route path='/blog' element={<Blog />}/>
           <Route
             path="*"
             element={
