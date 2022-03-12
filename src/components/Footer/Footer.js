@@ -10,10 +10,13 @@ export default function Footer() {
       <div className={style.ftCntnt}>
           <div className={style.smediaBtn}>
             <div className={style.smIcon} style={{backgroundImage: `url(${tweetPng})`}}> </div>
-            <div 
+            
+            <a 
             className={style.smIcon} 
-            style={{backgroundImage: `url(${gitPng})`}}>
-            </div>
+            style={{backgroundImage: `url(${gitPng})`}}
+            href="https://github.com/FreshMochi" target="_blank">
+            </a>
+            
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nxiong984@gmail.com&su=SUBJECT&body=BODY" target="_blank">
             <div className={style.smIcon} style={{backgroundImage: `url(${gmailPng})`}}> </div>
             </a>

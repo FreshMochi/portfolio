@@ -18,15 +18,15 @@ export default function About() {
         
       </div>
       <div className={style.textContainer}>
-        <p>About me</p>
+        <h1>About us</h1>
         <p>
           I am a self taught, aspiring Frontend developer. I work 50 hours a week as retail assistant manager and I code almost daily. 
           Whenever I would return home from work, I would code and or do a little research on Javascript fundamentals
           or learn cool libraries I can use with React.
-          However, my main goal is to learn more about the backend and Data structures to help further my knowledge with web development.
+          However, my main goal is to learn more about the Algorithm and Data Structures to help further my knowledge with web development.
         </p>
         <p>
-          This website is built with React for Frontend and Firebase as backend.
+          This website is built with React and Firebase.
         </p>
         <p>
           Feel free to contact me for any questions!

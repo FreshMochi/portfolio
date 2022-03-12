@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.textContainer h1 {
+  margin: 50px 0 40px 0;
+}
+
 .textContainer p {
   width: 80%;
 }
@@ -72,6 +76,9 @@
   .textContainer {
     padding: 100px 0;
   }
+  .textContainer h1 {
+    margin: 35px 0 60px 0;
+  }
 
   .iconContainer {
     flex-direction: row;
@@ -88,5 +95,9 @@
 @media only screen and (min-width: 1200px) {
   .logoBox {
     width: 20%;
+  }
+  .textContainer {
+    margin: 0 auto;
+    width: 80%;
   }
 }
