@@ -20,33 +20,33 @@ export default function About() {
       <div className={style.textContainer}>
         <p>About me</p>
         <p>
-          I am a self taught, aspiring Frontend developer. I work 50 hours a week and code almost daily. 
+          I am a self taught, aspiring Frontend developer. I work 50 hours a week as retail assistant manager and I code almost daily. 
           Whenever I would return home from work, I would code and or do a little research on Javascript fundamentals
           or learn cool libraries I can use with React.
-          However, my main goal is to learn about the backend and Data structures to help further my knowledge with web development.
+          However, my main goal is to learn more about the backend and Data structures to help further my knowledge with web development.
         </p>
         <p>
           This website is built with React for Frontend and Firebase as backend.
         </p>
         <p>
-          <a href='#contactme'>Feel free to contact me for either more questions!</a>
+          Feel free to contact me for any questions!
         </p>
       </div>
       <div className={`${style.iconContainer}`}>
         <div className={style.logoBox}>
-          <img src={webpng} className={style.logo} />
+          <img src={webpng} alt="javascript" className={style.logo} />
         </div>
         <div className={style.logoBox}>
-          <img src={reactpng}className={style.logo} />
+          <img src={reactpng} alt="react"  className={style.logo} />
         </div>
         <div className={style.logoBox}>
-          <img src={firebasepng}className={style.logo} />
+          <img src={firebasepng} alt="firebase" className={style.logo} />
         </div>
         <div className={style.logoBox}>
-          <img src={githubpng}className={style.logo} />
+          <img src={githubpng} alt="github" className={style.logo} />
         </div>
         <div className={style.logoBox}>
-          <img src={wordpng}className={style.logo} />
+          <img src={wordpng} alt="wordpress" className={style.logo} />
         </div>
         
         

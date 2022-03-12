@@ -10,6 +10,17 @@
   flex-flow: column;
 }
 
+.textContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer p {
+  width: 80%;
+}
+
 .contentContainer {
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(44,35,66,1) 18%);
   color: white;
@@ -27,6 +38,9 @@
   height: 200px;
   width: 50%;
   margin: 25px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -36,4 +50,43 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   margin: 25px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .textContainer {
+    padding: 60px 0;
+  }
+
+  .iconContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logoBox {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .textContainer {
+    padding: 100px 0;
+  }
+
+  .iconContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logoBox {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logoBox {
+    width: 20%;
+  }
 }
