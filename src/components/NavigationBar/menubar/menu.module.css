@@ -1,6 +1,9 @@
 .menubar {
   display: none;
 }
+.shrinkMenu {
+  display: none;
+}
 
 @media only screen and (min-width: 800px) {
   .menubar {
@@ -11,14 +14,28 @@
     background: rgb(255, 255, 255);
     position: fixed;
     font-size: 24px;z-index: 10;
+    transition: 1s;
   }
+  
+  .shrinkMenu {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    font-size: 24px;z-index: 10;
+    transition: 1s;
+  }
+
+
   .logo {
     height: 55px;
     width: auto;
     margin: auto 0;
   }
   
-  .menubar ul {
+   ul {
     display: flex;
     width: 60%;
     margin-right: 50px;
@@ -26,11 +43,11 @@
     align-items: center;
   }
 
-  .menubar ul li {
+  ul li {
     list-style: none;
   }
 
-  .menubar a {
+   a {
     text-decoration: none;
     margin: 0;
   }

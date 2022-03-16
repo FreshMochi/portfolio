@@ -3,7 +3,6 @@ import { doc, setDoc} from "firebase/firestore";
 import { db } from '../Firebase/config';
 import style from './Contactme.module.css'
 import { motion } from 'framer-motion';
-import backgroundimage from '../../img/contact/bear.jpg'
 
 
 export default function ContactMe() {

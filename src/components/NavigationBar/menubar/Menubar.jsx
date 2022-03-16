@@ -2,10 +2,31 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import style from './menu.module.css'
 import logo from '../../../img/elkicon.png'
+import { useState, useEffect } from 'react'
 
 export default function Menubar() {
+  const [ show, setShow ] = useState(null)
+
+  const controlNavbar = () => {
+    if (window.scrollY  > 800 ) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
+
+  useEffect(()=> {
+    window.addEventListener('scroll',
+    controlNavbar)
+    return () => {
+      window.removeEventListener('scroll',
+      controlNavbar)
+    }
+  }, [])
+
+
   return (
-    <div className={style.menubar}>
+    <div className={show ? `${style.menubar}`: `${style.shrinkMenu}`}>
     <div className={style.logo}>
       <img style={{height: 'inherit', width: 'auto'}} src={logo}/>
     </div>
