@@ -1,15 +1,15 @@
 .cardcntnr {
   min-height: 300px;
   width: 88%;
-  background-color: rgb(49, 36, 90);
+  background-color: rgb(221, 221, 221);
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 2em 0;
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
-  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.87);
+  box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.87);
   border-radius: 30px;
 }
 

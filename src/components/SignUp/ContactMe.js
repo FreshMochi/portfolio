@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { doc, setDoc} from "firebase/firestore"; 
 import { db } from '../Firebase/config';
 import style from './Contactme.module.css'
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 
 export default function ContactMe() {
+
+  const[sent, setSent] = useState(false)
 
   const addEmail = (event) => {
     event.preventDefault()
@@ -38,33 +40,40 @@ export default function ContactMe() {
       COMMENT: COMMENT
     });
 
+    setSent(true)
+    console.log(sent)
   }
 
-  
+  useEffect(() =>{
+    console.log(sent)
+  })
 
   return (
-    <motion.div className={style.formContainer}
+    <div className={style.formContainer}
     
     >
       <div>
         
       </div>
-      <motion.form 
+      <form 
       onSubmit={addEmail} 
       className={style.contactform} 
       autoComplete="off"
       >
+      <span className={sent ? `${style.thankyou}`: `${style.welcome}`}>
+        <p className={sent ? `${style.thankyou01}`: ''}>Thank You!</p>
+      </span>
         <div>
           <h1>Contact me</h1>
         </div>
-        <input type='text' id="business_name" placeholder=' Business Name' />
+        <input required type='text' id="business_name" placeholder=' Business Name' />
         <input type='text' id="fname" placeholder=' First Name' />
         <input type='text' id="lname" placeholder=' Last Name' />
-        <input type='text' id="email" placeholder=' email' />
+        <input required type='text' id="email" placeholder=' email' />
         <input type='tel' id="Pnumber" placeholder=' Contact Number' />
         <textarea className={style.comment}  id="comment" placeholder="Leave a comment"></textarea>
         <button>Send Contact</button>
-      </motion.form>
-    </motion.div>
+      </form>
+    </div>
   )
 }
