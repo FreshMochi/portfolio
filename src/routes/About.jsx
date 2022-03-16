@@ -9,6 +9,16 @@ import firebasepng from '../img/aboutPNG/firebase.png'
 import githubpng from '../img/aboutPNG/github00.png'
 import wordpng from '../img/aboutPNG/wordpress0.png'
 
+/* Initial animation for Banner Text */
+const bannerFontAnimation = {
+  y: -100,
+  opacity: 0
+}
+/* Banner animation after page load */
+const animate = {
+  y: 0, 
+  opacity: 1
+}
 
 
 
@@ -19,7 +29,12 @@ export default function About() {
       <div 
       className={style.Banner}
       style={{backgroundImage: `url(${Banner})`}}>
-        
+        <motion.span
+        transition={{duration: 1.5}}
+        initial={bannerFontAnimation}
+        animate={animate}>
+        <h1 style={{fontSize: "30px"}}>About my work!</h1>
+        </motion.span>
       </div>
       <div className={style.textContainer}>
         <h1>About</h1>
