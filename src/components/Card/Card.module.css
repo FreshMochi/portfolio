@@ -69,17 +69,6 @@ h1 {
 }
 @media only screen and (min-width: 1100px) {
   .cardcntnr {
-    width: 330px
-  }
-}
-@media only screen and (min-width: 1100px) {
-  .cardcntnr {
-    width: 360px
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .cardcntnr {
-    width: 380px
+    width: 29%
   }
 }

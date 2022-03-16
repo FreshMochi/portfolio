@@ -22,8 +22,16 @@
 
 .PortfolioContent {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: column;
-  min-height: 60vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 650px) {
+  .PortfolioContent {
+    flex-flow: row;
+    justify-content: space-around;
+  }
 }

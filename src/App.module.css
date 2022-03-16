@@ -2,8 +2,13 @@
   background: rgb(172, 172, 172);
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 @media only screen and (min-width: 1920px) {
   .App {width: 1920px;}
+
+  .App-header {
+    position: fixed;
+  }
 }

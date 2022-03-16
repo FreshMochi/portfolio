@@ -1,10 +1,15 @@
 import React from 'react'
 import style from '../PageStyles/AnimationStyleSheet/btn.module.css'
+import  {motion } from 'framer-motion'
+
+
 
 export default function Animatepro() {
   return (
-    <div className={style.AnimateContainer}>
+    <div 
+    className={style.AnimateContainer}>
       <div style={{margin: '0'}}><h1>CSS Animation Projects</h1></div>
+
       <div className={style.btnAnimate}>
         <div>
           <div className={style.btn00 }>Hover Me</div>

@@ -45,17 +45,15 @@ export default function ContactMe() {
 
   return (
     <motion.div className={style.formContainer}
-      style={{backgroundImage: `url(${backgroundimage})`}}
     
     >
+      <div>
+        
+      </div>
       <motion.form 
       onSubmit={addEmail} 
       className={style.contactform} 
       autoComplete="off"
-      whileHover={{
-      scale: 1.02,
-      transition: { duration: 0.4 },
-    }}
       >
         <div>
           <h1>Contact me</h1>
@@ -65,7 +63,7 @@ export default function ContactMe() {
         <input type='text' id="lname" placeholder=' Last Name' />
         <input type='text' id="email" placeholder=' email' />
         <input type='tel' id="Pnumber" placeholder=' Contact Number' />
-        <textarea className={style.comment} id="comment" placeholder="Leave a comment"></textarea>
+        <textarea className={style.comment}  id="comment" placeholder="Leave a comment"></textarea>
         <button>Send Contact</button>
       </motion.form>
     </motion.div>

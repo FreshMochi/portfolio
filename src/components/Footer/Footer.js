@@ -3,11 +3,13 @@ import style from './Footer.module.css'
 import gmailPng from '../../img/icons/gmail-icon.png'
 import gitPng from '../../img/icons/github.png'
 import tweetPng from '../../img/icons/twitter.png'
+import ContactMe from '../SignUp/ContactMe'
+import logo from '../../img/elkicon.png'
 
 export default function Footer() {
   return (
     <div className={style.ftCntnr}>
-      <div className={style.ftCntnt}>
+      <div className={style.ftCntnt} style={{backgroundImage: `url()`}}>
           <div className={style.smediaBtn}>
             <div className={style.smIcon} style={{backgroundImage: `url(${tweetPng})`}}> </div>
             
@@ -22,10 +24,19 @@ export default function Footer() {
             </a>
           </div>
           <div className={style.ftInfo}>
-              <p>location: San Jose</p>
-              <p>Email: Jukke.dev@gmail.com</p>
+            <div className={style.contactInfo}>
+              <p>location: San Diego</p>
+              <p>Email: nxiong@gmail.com</p>
+              <div className={style.footerLogo}>
+                <img style={{height: "inherit"}} src={logo} />
+              </div>
+            </div>
+              <div>
+                <ContactMe />
+              </div>
           </div>
       </div>
   </div>
   )
 }
+

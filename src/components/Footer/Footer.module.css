@@ -2,17 +2,21 @@
   padding: 50px 0 0 0;
   width: 100%;
   min-height: 60vh;
+  /* background: linear-gradient(180deg, rgba(0,0,0,1) 67%, rgba(255,255,255,1) 100%); */
   background-color: black;
   color: azure;
 }
 
 .ftCntnt {
   width: 80%;
-  background: rgb(0, 0, 0);
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  width: auto;
 }
 
 .smediaBtn {
@@ -40,12 +44,66 @@
 }
 
 .ftInfo {
-  height: 40vh;
-  margin: 10%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .ftInfo p {
-  display: flex;
-  justify-content: space-between;
   font-size: 24px;
+}
+
+.footerLogo {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .smediaBtn  {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .contactInfo {
+    margin: 115px 100px 0 0;
+  }
+  .ftInfo {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footerLogo {
+    display: block;
+    height: 200px;
+    width:  auto;
+    margin: 60px 0 0 40px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .smediaBtn  {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .contactInfo {
+    margin: 100px 0 0 100px;
+  }
+  .ftInfo {
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+  }
+
+}
+@media only screen and (min-width: 1600px) {
+  .contactInfo {
+    margin: 100px 0 0 250px;
+  }
+  .ftInfo {
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+  }
+
 }

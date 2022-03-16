@@ -1,6 +1,6 @@
 .formContainer {
   width: 100%;
-  min-height: 100vh;
+  min-height: 84vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -9,6 +9,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
+  background-color: transparent;
 }
 
 .contactform {
@@ -16,25 +17,43 @@
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  color: aquamarine;
-  background-color: rgba(12, 4, 17, 0.85);
+  color: rgb(255, 255, 255);
   width: 90%;
-  height: 70vh;
-  padding: 40px 0;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 
 .contactform input {
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 20px 0;
   font-size: 20px;
 }
 
+
+
 .comment {
   resize: none;
+  height: 100px;
+  width: auto;
   font-size: 20px;
-  height: 80px;
   margin: 20px 0 40px 0;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 900px) {
+  .formContainer {
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .contactform {
+    width: 600px;
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .contactform {
+    width: 800px;
+    padding: 30px;
+  }
 }

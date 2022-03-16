@@ -28,12 +28,13 @@ export default function Home() {
       <motion.span initial={bannerFontAnimation} animate={animate} transition={{duration: 1.0, delay: 0.5}}>Portfolio</motion.span>
       </div>
       <div 
+      className={style.headh1}
       style={{
         display:  "flex", 
         justifyContent: 'center', 
         alignItems: "center",
         color: 'white'}}>                      {/* This style will center h1 in center of the page. */}
-        <h1 style={{padding: "20px"}}>Built with ReactJs</h1>
+        <h1>Built with ReactJs</h1>
       </div>
       <div className={style.HomeContent}>
         <Card headline="About" dialog={aboutDialog} link="about" />
@@ -45,8 +46,8 @@ export default function Home() {
 }
 
 
-const aboutDialog = "Get to know a little more about this website and which technologies I've work with"
+const aboutDialog = "Get to know more about this website and technologies I've work with"
 
-const portfolioDialog = "View some of my CSS works"
+const portfolioDialog = "View some of my works"
 
 const blogDialog = "Check out what I've planed for the future"
