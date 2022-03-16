@@ -28,11 +28,11 @@ export default function About() {
           I'm always looking forward to learn cool libraries that I can implement with React.
         </p>
           <p>My goals:
-          <ul>
+          </p>
+          <ul >
             <li>Learn Three.js</li>
             <li>Learn more about the Algorithm and Data Structures to become a better developer.</li>
           </ul> 
-          </p>
         <p>
           This website is built with React and Firebase.
         </p>
@@ -66,7 +66,7 @@ export default function About() {
       <div className={style.btn}>
 
         <Pfcard title="Portfolio" link="portfolio"/>
-        <Pfcard title="Blog" link="portfolio"/>
+        <Pfcard title="Blog" link="blog"/>
       </div>
     </div>
   )

@@ -5,34 +5,25 @@
   display: none;
 }
 
+
+ul li {
+  width: 80%;
+  list-style: none;
+}
+
 @media only screen and (min-width: 800px) {
   .menubar {
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     justify-content: flex-end;
     background: rgb(255, 255, 255);
     position: fixed;
-    font-size: 24px;z-index: 10;
+    font-size: 24px;
+    z-index: 10;
     transition: 1s;
   }
   
-  .shrinkMenu {
-    width: 100%;
-    height: 4vh;
-    display: flex;
-    justify-content: flex-end;
-    background: rgb(255, 255, 255);
-    position: fixed;
-    font-size: 24px;z-index: 10;
-    transition: 0.5s;
-  }
-
-  .shrinkMenu:hover {
-    height: 8vh;
-  }
-
-
   .logo {
     height: 55px;
     width: auto;
@@ -41,14 +32,14 @@
   
    ul {
     display: flex;
-    width: 60%;
+    width: 80%;
     margin-right: 50px;
     justify-content: space-around;
     align-items: center;
   }
 
   ul li {
-    list-style: none;
+    width: 100%;
   }
 
    a {
@@ -56,10 +47,38 @@
     margin: 0;
   }
 
+  .shrinkMenu {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    font-size: 18px;z-index: 10;
+    transition: 0.5s;
+  }
+
+  .shrinkMenu:hover {
+    height: 10vh;
+  }
+
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
+  .menubar {
+    justify-content: space-between;
+  }
+  .shrinkMenu {
+    justify-content: space-between;
+  }
+  ul {
+    width: 30%;
+    margin-right: 50px;
+  }
 
+  .logo {
+    margin-left: 60px;
+  }
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Card.module.css'
 import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import gura from '../../img/contents/biker.jpg'
 import { Link } from 'react-router-dom';
@@ -13,8 +13,17 @@ const beforeAnimate = {
 }
 
 export default function Card(props) {
+
+  const [showDisabled, setShowError] = useState(false)
+
+  function disabled(event) {
+    event.preventDefault()
+    setShowError(true)
+  }
   
-  //this library allows us to trigger a boolean when in view
+  
+
+//this library allows us to trigger a boolean when in view
   const {ref, inView} = useInView({
     threshold: 0.6
 });
@@ -44,9 +53,12 @@ const animation = useAnimation()
       transition: { duration: 0.4 },
     }}
     > {/* ref will reference to inview */}
-      <div><h1 style={{
-        margin: "20px 0"
-      }}>{props.headline}</h1></div>
+      <div>
+        <h1 style={{
+          margin: "20px 0"
+          }}>{props.headline}
+        </h1>
+      </div>
       <div className={style.imgcntnr}>
         <img src={gura} alt='' />
       </div>
@@ -57,6 +69,7 @@ const animation = useAnimation()
       </div>
       <div className={style.btnpos}>
         <Link
+          onClick={props.link === "blog"? (event) => disabled(event): ''} 
           style={{textDecoration: 'none'}}
           to={`/${props.link}`}>
           <button>
@@ -64,6 +77,9 @@ const animation = useAnimation()
           </button>
           </Link>
       </div>
+      <span className={showDisabled? `${style.covercard}`: `${style.hidemsg}`}>
+        <p style={{color: 'white'}}>Sorry Currently Unavailable</p>
+      </span>
     </motion.div>
   )
 }

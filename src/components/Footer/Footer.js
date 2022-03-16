@@ -11,7 +11,9 @@ export default function Footer() {
     <div className={style.ftCntnr}>
       <div className={style.ftCntnt} style={{backgroundImage: `url()`}}>
           <div className={style.smediaBtn}>
-            <div className={style.smIcon} style={{backgroundImage: `url(${tweetPng})`}}> </div>
+            <a href='https://twitter.com/Jukke85005710'  target="_blank"
+            className={style.smIcon} style={{backgroundImage: `url(${tweetPng})`}}>
+             </a>
             
             <a 
             className={style.smIcon} 
@@ -25,8 +27,8 @@ export default function Footer() {
           </div>
           <div className={style.ftInfo}>
             <div className={style.contactInfo}>
-              <p>location: San Diego</p>
-              <p>Email: nxiong@gmail.com</p>
+              <p>Location: San Jose</p>
+              <p>Email: nxiong984@gmail.com</p>
               <div className={style.footerLogo}>
                 <img style={{height: "inherit"}} src={logo} />
               </div>

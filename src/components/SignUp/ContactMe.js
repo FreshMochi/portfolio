@@ -41,11 +41,9 @@ export default function ContactMe() {
     });
 
     setSent(true)
-    console.log(sent)
   }
 
   useEffect(() =>{
-    console.log(sent)
   })
 
   return (

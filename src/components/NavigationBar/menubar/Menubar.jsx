@@ -5,7 +5,7 @@ import logo from '../../../img/elkicon.png'
 import { useState, useEffect } from 'react'
 
 export default function Menubar() {
-  const [ show, setShow ] = useState(null)
+  const [ show, setShow ] = useState(true)
 
   const controlNavbar = () => {
     if (window.scrollY  > 800 ) {
@@ -34,8 +34,6 @@ export default function Menubar() {
         <li><Link to='/' >Home</Link></li>
         <li><Link to='/about' >About</Link></li>
         <li><Link to='/portfolio' >Portfolio</Link></li>
-        <li><Link to='/blog' >Blog</Link></li>
-        <li><a href='#contact'>Contact</a></li>
       </ul>
     </div>
   )
