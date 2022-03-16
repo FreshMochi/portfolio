@@ -26,7 +26,7 @@ export default function Pfcard(props) {
       <div>
           <Link 
           onClick={props.link === "blog"? (event) => disabled(event): ''} 
-          to={props.link}  >
+          to={props.link === 'portfolio'? '/portfolio' : `${props.link}`}  >
           <button>
             View more
           </button>
